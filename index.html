@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Favorites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Favorites</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
     <div id="app">
         <header>
             <h1>Github Favorites</h1>
             <div class="search">
-                <label for="input-search">Usuário do Github"</label>
+                <label class="sr-only" for="input-search">Usuário do Github"</label>
                 <input id="input-search" placeholder="Usuário do Github">
                 <button>&plus;</button>
             </div>
@@ -26,7 +34,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="users">
+                    <td class="user">
                         <img src="https://github.com/joabsonvasconcelos.png" alt="">
                         <a href="https://github.com/joabsonvasconcelos" 
                         target="_blank">
@@ -41,10 +49,10 @@
                         9586
                     </td>
                     <td>
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                     </td>
                     <tr>
-                        <td class="users">
+                        <td class="user">
                             <img src="https://github.com/diego3g.png" alt="">
                             <a href="https://github.com/diego3g" target="_blank">
                                 <p>Diego Fernandes</p>
@@ -58,7 +66,7 @@
                             22503
                         </td>
                         <td>
-                            <button>&times;</button>
+                            <button class="remove">&times;</button>
                         </td>
                 </tr>
             </tbody>
